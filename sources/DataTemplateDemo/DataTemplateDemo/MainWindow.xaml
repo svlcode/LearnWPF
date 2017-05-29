@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <DataTemplate x:Key="PersonTemplate">
+        <DataTemplate x:Key="PersonTemplate" DataType="{x:Type local:Person}">
             <Border BorderThickness="1" BorderBrush="LightSkyBlue">
                 <StackPanel>
                     <TextBlock Text="{Binding FirstName}" FontSize="25" FontStyle="Italic"/>
@@ -18,7 +18,7 @@
         </DataTemplate>
     </Window.Resources>
     <StackPanel>
-        <ContentControl Content="{Binding}" ContentTemplate="{StaticResource PersonTemplate}"/>
-        <ContentControl Content="{Binding}" ContentTemplate="{StaticResource PersonTemplate}"/>
+        <ContentControl Content="{Binding}" ContentTemplate="{StaticResource PersonTemplate}" />
+        <Button Content="{Binding}" ContentTemplate="{StaticResource PersonTemplate}" />
     </StackPanel>
 </Window>

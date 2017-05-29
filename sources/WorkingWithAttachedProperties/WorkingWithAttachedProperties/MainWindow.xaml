@@ -19,7 +19,7 @@
             <RowDefinition Height="94*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="DemoButton" Content="Click me!" Grid.Column="1" Click="DemoButton_Click"/>
+        <Button x:Name="DemoButton" Content="Click me!" Grid.Column="1"  Click="DemoButton_Click"/>
 
 
     </Grid>
